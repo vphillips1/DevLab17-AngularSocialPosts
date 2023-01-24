@@ -1,0 +1,23 @@
+
+<div class="OnePost">
+
+    <input [(ngModel)]="mode" type="checkbox"/> Edit Post
+    
+    <div *ngIf="mode == false">
+    <div> Title: {{ thisPost.title}}</div>
+    <div> {{thisPost.thought}}</div>
+
+    <div><button (click)="deletePost()" class="btn"><i class="fa fa-trash"></i>Delete</button></div>
+    </div>
+
+</div>
+
+
+<div *ngIf="mode == true">
+
+   New Thought <br/>
+    <input [(ngModel)] = "thisPost.title" type="text"/><br/>
+    <input [(ngModel)] ="thisPost.thought" type= "text"/><br/>
+
+
+</div>

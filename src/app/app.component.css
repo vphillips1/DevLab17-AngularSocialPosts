@@ -1,0 +1,9 @@
+.WelcomeMessage {
+
+    background-color: mediumslateblue;
+    color: black;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
